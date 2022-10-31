@@ -1,0 +1,6 @@
+framework module RxNative {
+  umbrella header "RxNative-umbrella.h"
+
+  export *
+  module * { export * }
+}

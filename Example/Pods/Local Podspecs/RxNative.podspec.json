@@ -1,0 +1,69 @@
+{
+  "name": "RxNative",
+  "version": "0.1.0",
+  "summary": "RxNative is for Hybride App which need native function, such as location, photo.",
+  "description": "RxNative is for Hybride App which need native function, such as location, photo.",
+  "homepage": "https://github.com/lhp3851@163.com/RxNative",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Alvin": "lhp3851@163.com"
+  },
+  "source": {
+    "git": "https://github.com/lhp3851@163.com/RxNative.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "subspecs": [
+    {
+      "name": "Core",
+      "dependencies": {
+        "RxSwift": [
+          "~> 6.5"
+        ],
+        "RxCocoa": [
+          "~> 6.5"
+        ]
+      }
+    },
+    {
+      "name": "Contacts",
+      "source_files": "RxNative/Classes/Contacts/**/*"
+    },
+    {
+      "name": "Files",
+      "source_files": "RxNative/Classes/Files/**/*"
+    },
+    {
+      "name": "Location",
+      "source_files": "RxNative/Classes/Location/**/*"
+    },
+    {
+      "name": "Multimedia",
+      "source_files": "RxNative/Classes/Multimedia/**/*"
+    },
+    {
+      "name": "Networking",
+      "dependencies": {
+        "RxNative/Core": [
+
+        ],
+        "Moya/RxSwift": [
+
+        ],
+        "HandyJSON": [
+
+        ]
+      },
+      "source_files": "RxNative/Classes/Networking/**/*"
+    },
+    {
+      "name": "WebView",
+      "source_files": "RxNative/Classes/WebView/**/*"
+    }
+  ]
+}
